@@ -1,1 +1,4 @@
-Web110 - W01 - Jennifer Bethard
+# WEB110 - Jennifer Bethard
+
+http://jbeth.github.io
+
