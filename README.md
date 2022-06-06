@@ -1,4 +1,4 @@
-# WEB110 - Jennifer Bethard
+# WEB110 - Jen Bethard
 
 http://jbeth.github.io
 
