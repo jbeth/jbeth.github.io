@@ -1,5 +1,42 @@
-Lesson seven covered the fundamentals of networking including the OSI model, networking devices and structures, internet protocols, and setting up small office/home office networks. The first activity I would like to touch on is the activity to verify network connectivity. Being able to do this effectively helps in the troubleshooting process immensely by narrowing down if communication errors are on the network or only specific to the application or machine that is experiencing those issues. This is something I use almost daily in my current position. My team manages the day-to-day remediation and management tasks for all of the servers in our environment, both on-prem and in Azure. This includes ensuring that these servers can communicate across subnets and VLANs to our management consoles like SCOM, which is especially difficult with Azure machines considering Azure networks default to deny all access outside the subnet and are very segmented. This means that when there are problems with communication on our Azure machines we often use tools such as nslookup, tracert, and test-netconnection in PowerShell to determine where the connection issue is coming from.
+<head>
+    <title>Assignment 7</title>
+</head>
 
-The next activity I would like to discuss is on sharing and connecting to shared folders. Understanding how to set up, access, and share network folders and locations aids in more effective collaboration and potentially reduced resource costs through centralized storage. This is also something I manage regularly at work. There are certain restricted folders that my team manages access for using Active Directory security groups that only we have permission to modify. We will create new shared folders and network drives based on business request and configure the DFS sharing settings to ensure it is accessible by the right groups of people. I also have experience migrating shared locations or mount points when servers are rebuilt or migrated to new hosts, including unmounting and remounting shared network drives for database and SQL servers. Although we do not have any Macs in our environment right now, there is an initiative in progress to expand our supported machines to include Macs in the future, and knowing how to access network resources on a Mac interface will no doubt prove useful.
+<body>
+    <h1>Assignment 7</h1>
 
-The final activity I would like to touch on is what is required to set up a personal at-home network. Up until the beginning of the COVID-19 pandemic, I commuted to the office and my home network was fairly basic for its purpose to support my videogame hobby. I had researched and purchased a modem and separate router that supported 2.5ghz and 5ghz frequencies, as well as gigabit bandwidth support on each of the ports and built-in QoS protocols to ensure there were no issues with my online games. Once I started working from home it was easy to set up a more secure home network using the features available with the router, in addition to not having to worry about the additional bandwidth requirements causing any network bottlenecks. The transition to a home office network setup was relatively painless thanks to my advanced research to ensure my components would be able to support my heavier network usage from my gaming hobby.
+    <p>Lesson seven covered the fundamentals of networking including the OSI model, networking devices and structures,
+        internet protocols, and setting up small office/home office networks. The first activity I would like to touch
+        on is the activity to verify network connectivity. Being able to do this effectively helps in the
+        troubleshooting process immensely by narrowing down if communication errors are on the network or only specific
+        to the application or machine that is experiencing those issues. This is something I use almost daily in my
+        current position. My team manages the day-to-day remediation and management tasks for all of the servers in our
+        environment, both on-prem and in Azure. This includes ensuring that these servers can communicate across subnets
+        and VLANs to our management consoles like SCOM, which is especially difficult with Azure machines considering
+        Azure networks default to deny all access outside the subnet and are very segmented. This means that when there
+        are problems with communication on our Azure machines we often use tools such as nslookup, tracert, and
+        test-netconnection in PowerShell to determine where the connection issue is coming from.</p>
+
+    <p>The next activity I would like to discuss is on sharing and connecting to shared folders. Understanding how to
+        set up, access, and share network folders and locations aids in more effective collaboration and potentially
+        reduced resource costs through centralized storage. This is also something I manage regularly at work. There are
+        certain restricted folders that my team manages access for using Active Directory security groups that only we
+        have permission to modify. We will create new shared folders and network drives based on business request and
+        configure the DFS sharing settings to ensure it is accessible by the right groups of people. I also have
+        experience migrating shared locations or mount points when servers are rebuilt or migrated to new hosts,
+        including unmounting and remounting shared network drives for database and SQL servers. Although we do not have
+        any Macs in our environment right now, there is an initiative in progress to expand our supported machines to
+        include Macs in the future, and knowing how to access network resources on a Mac interface will no doubt prove
+        useful.</p>
+
+    <p>The final activity I would like to touch on is what is required to set up a personal at-home network. Up until
+        the beginning of the COVID-19 pandemic, I commuted to the office and my home network was fairly basic for its
+        purpose to support my videogame hobby. I had researched and purchased a modem and separate router that supported
+        2.5ghz and 5ghz frequencies, as well as gigabit bandwidth support on each of the ports and built-in QoS
+        protocols to ensure there were no issues with my online games. Once I started working from home it was easy to
+        set up a more secure home network using the features available with the router, in addition to not having to
+        worry about the additional bandwidth requirements causing any network bottlenecks. The transition to a home
+        office network setup was relatively painless thanks to my advanced research to ensure my components would be
+        able to support my heavier network usage from my gaming hobby.</p>
+
+</body>
