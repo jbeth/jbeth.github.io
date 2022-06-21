@@ -14,7 +14,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview10"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -23,23 +23,20 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     showborder="false"
      inkscape:zoom="0.74118967"
-     inkscape:cx="250.27332"
-     inkscape:cy="-215.19458"
+     inkscape:cx="-65.435342"
+     inkscape:cy="452.65067"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     inkscape:lockguides="false" />
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="matrix(0.64790121,0,0,0.70906851,122.98378,119.20338)">
     <path
        style="opacity:0.99;fill:#782121;stroke-width:0.365118"
        d="m -70.99519,-160.82204 -71.42856,200 244.33496,-62.561568 -210.83742,33.497534 z"
@@ -51,17 +48,14 @@
     <path
        style="fill:#ffffff;stroke-width:0.26243"
        d="m 11.090086,-51.84226 c 0,12.3176 -25.279908,43.442482 -38.181656,57.84382 -12.901734,14.40134 -25.965124,16.25908 -18.251852,-9.057854 7.971206,-26.163536 -73.136988,-29.378 -73.475708,-54.010886 -0.1742,-12.66596 2.89098,-15.59384 29.7717,-42.89118 11.68184,-11.86288 33.3393,-24.62484 28.10884,-12.15696 -16.25634,38.7504 -12.61772,54.88768 15.288032,57.45018 19.518752,1.79234 56.740644,-9.49474 56.740644,2.82288 z"
-       id="path154-1"
-       sodipodi:nodetypes="ssssssss" />
+       id="path154-1" />
   </g>
   <g
-     inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     transform="matrix(0.64790121,0,0,0.70906851,122.98378,119.20338)">
     <path
        id="rect130-1"
        style="opacity:0.99;fill:#782121;stroke-width:0.365118"
-       d="m -120.10949,17.1738 -22.31426,22.00416 244.33497,-62.561568 -210.83743,33.497534 z"
-       sodipodi:nodetypes="ccccc" />
+       d="m -120.10949,17.1738 -22.31426,22.00416 244.33497,-62.561568 -210.83743,33.497534 z" />
   </g>
 </svg>
