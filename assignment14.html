@@ -16,9 +16,90 @@
 <main>
 
     <body>
+        <p class="ex1">Assignment 14 covered SQL, which is something I have a basic knowledge of but have never actually used. At
+            work we have a Database team that manages all the SQL servers and databases in our environment, but
+            occasionally they reach out to the systems administrators for some smaller project work managing their
+            databases. Even if I don’t get much experience in the short term, now I am able to at least parse some basic
+            amount of SQL syntax, which should help me with identifying issues on our SQL servers as they may arise
+            during maintenance. This may open up opportunities for me to work with our Database engineers should they
+            need any additional resources for project work.</p>
         <h1>Assignment 14</h1>
 
-        <p class="ex1">Placeholder for Assignment 14</p>
-
+        <h3>Single Table SELECT Statements</h3>
+        <p class="ex1">
+        <ol>
+            <li>Select * From customers;</li><br>
+            <li>Select customerid,customername From customers;</li><br>
+            <li>Select customername,address,city,postalcode From customers<br>
+                where country='UK';</li><br>
+            <li>Select contactname,customername From customers<br>
+                order by contactname;</li><br>
+            <li>Select count(*) From customers;</li><br>
+            <li>Select country,count(*) From customers<br>
+                group by country;</li><br>
+            <li>Select country,count(*) From customers<br>
+                group by country<br>
+                order by count(*) desc, country asc;</li><br>
+            <li>Select country,count(*) From customers<br>
+                group by country<br>
+                having count(country) >10<br>
+                order by count(*) desc, country asc;</li>
+        </ol>
+        </p>
+        </p>
+        <br>
+        <h3>Multiple-Table SELECT Statements</h3>
+        <p class="ex1">
+        <ol>
+            <li>select orders.orderID, customers.customerName<br>
+                From orders<br>
+                inner join customers on orders.customerID = customers.customerID;</li><br>
+            <li>select orders.orderID as [order number], customers.customerName, orders.orderdate<br>
+                From orders<br>
+                inner join customers on orders.customerID = customers.customerID</li><br>
+            <li>select orders.orderID as [order number], customers.customerName, orders.orderdate<br>
+                From orders<br>
+                inner join customers on orders.customerID = customers.customerID<br>
+                order by customername, [order number]</li><br>
+            <li>select orders.orderID as [order number], orders.orderdate, products.productname,
+                orderdetails.quantity<br>
+                from ((orders<br>
+                inner join orderdetails on orders.orderID = orderdetails.orderID)<br>
+                inner join products on orderdetails.productID = products.productID);</li><br>
+            <li>select orders.orderID as [Order Number], orders.orderdate, products.productname, orderdetails.quantity,
+                (orderdetails.quantity*products.price) as [Extended Price]<br>
+                from ((orders<br>
+                inner join orderdetails on orders.orderID = orderdetails.orderID)<br>
+                inner join products on orderdetails.productID = products.productID);</li><br>
+            <li>select orders.orderID as [Order Number], orders.orderdate, products.productname, orderdetails.quantity,
+                (orderdetails.quantity*products.price) as [Extended Price]<br>
+                from ((orders<br>
+                inner join orderdetails on orders.orderID = orderdetails.orderID)<br>
+                inner join products on orderdetails.productID = products.productID)<br>
+                where customerID='2';</li><br>
+            <li>select orders.orderID as [Order Number], orders.orderdate, products.productname, orderdetails.quantity,
+                (orderdetails.quantity*products.price) as [Extended Price]<br>
+                from ((orders<br>
+                inner join orderdetails on orders.orderID = orderdetails.orderID)<br>
+                inner join products on orderdetails.productID = products.productID)<br>
+                where customerID='4';</li><br>
+        </ol>
+        </p>
+        </p>
+        <br>
+        <h3>INSERT, UPDATE, and DELETE Statements</h3>
+        <p class="ex1">
+        <ol>
+            <li>insert into Shippers<br>
+                values ('4', 'On Time Delivery', '(503) 555-0123');</li><br>
+            <li>update Products<br>
+                Set Price=(Price+1)</li><br>
+            <li>update Products<br>
+                Set Price=(Price-1);</li><br>
+            <li>update shippers<br>
+                set shippername='On-Time Delivery'<br>
+                where shippername='On Time Delivery';</li><br>
+            <li>delete from shippers where shippername='On-Time Delivery';</li><br>
+        </ol>
     </body>
 </main>
