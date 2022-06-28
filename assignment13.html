@@ -18,7 +18,77 @@
     <body>
         <h1>Assignment 13</h1>
 
-        <p class="ex1">Placeholder for Assignment 13</p>
+        <p id="text"></p>
+        <p class="ex1">
+            <script>
+                document.getElementById("text").innerHTML = "Hello Jen!";
+            </script>
+        </p>
+
+        <p id="text2"></p>
+        <p class="ex1">
+            <script>
+                document.getElementById("text2").innerHTML = Date();
+            </script>
+        </p>
+
+        <p class="ex1">
+            In this assignment I learned that something as relatively simple as a canvas element can be used to make
+            complex shapes and graphical compositions embedded in the web page itself. When I started this assignment, I
+            was a little intimidated since I don’t have much design experience at all. After working through the
+            activities and building out my canvas for this webpage, I feel much more confident about my abilities to use
+            this design element. The most helpful thing for me while working through this assignment was just to
+            remember that the canvas is essentially a grid, so drawing shapes comes down to mapping the correct points,
+            curves, and lines on that grid much in the same way I’d map functions in algebra.
+        </p>
+        <h3>Canvas Element</h3>
+
+        <p class="ex1">
+            <canvas id="myCanvas" width="375" height="250">
+                Your browser does not support the HTML canvas tag.</canvas>
+
+            <script>
+
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+
+
+                // Create gradient
+                var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                grd.addColorStop(0, "black");
+                grd.addColorStop(.5, "red");
+                grd.addColorStop(1, "white");
+
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10, 10, 600, 300);
+
+                //create co-centric circle
+                ctx.beginPath();
+                ctx.arc(300, 175, 30, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(300, 175, 20, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(300, 175, 10, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(300, 175, 1, 0, 2 * Math.PI);
+                ctx.stroke();
+
+                // Draw a line, width 4
+                ctx.moveTo(350, 10);
+                ctx.lineTo(25, 300);
+                ctx.stroke();
+
+                //Text
+                ctx.font = "20px Arial";
+                ctx.strokeStyle = 'white';
+                ctx.strokeText("A Study of Circles", 15, 100);
+
+            </script>
+        </p>
 
     </body>
 </main>
